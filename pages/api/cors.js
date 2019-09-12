@@ -1,12 +1,12 @@
 import fetch from "isomorphic-unfetch";
 
 const Cors = async (req, res) => {
-  const { refer } = req.query;
+  const { url } = req.query;
   try {
-    const resProxy = await fetch(refer);
+    const resProxy = await fetch(url);
     res.status(200).send(resProxy.body);
-  } catch (e) {
-    res.status(400);
+  } catch (error) {
+    res.status(400).send(error.toString());
   }
 };
 

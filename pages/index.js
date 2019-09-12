@@ -43,7 +43,7 @@ const Home = () => {
       <div className="hero">
         <h1 className="title">Welcome to Cors-Next.js!</h1>
         <p className="description">
-          To try a demo, please click on a box below.
+          To try the demo, please click on the boxs below.
         </p>
 
         <div className="row">
