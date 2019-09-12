@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import fetch from "isomorphic-unfetch";
 
 const Home = () => {
@@ -41,9 +42,16 @@ const Home = () => {
       </Head>
 
       <div className="hero">
-        <h1 className="title">Welcome to Cors-Next.js!</h1>
+        <h1 className="title">Welcome to Cors NextJS!</h1>
         <p className="description">
           To try the demo, please click on the boxs below.
+        </p>
+        <p className="description">
+          If you like this project, you can support me by this{" "}
+          <Link href="https://www.paypal.me/chitly/5">
+            <a>link</a>
+          </Link>
+          .
         </p>
 
         <div className="row">
@@ -51,6 +59,12 @@ const Home = () => {
             <h3>No Cors Example &rarr;</h3>
             <p>Fetch data from example.com</p>
           </a>
+          <Link href="https://www.paypal.me/chitly/5">
+            <a className="card" onClick={handleNoCors}>
+              <h3>Support The Project &rarr;</h3>
+              <p>https://www.paypal.me/chitly/5</p>
+            </a>
+          </Link>
           <a className="card" onClick={handleCors}>
             <h3>Cors Example &rarr;</h3>
             <p>Fetch data from example.com</p>

@@ -4,6 +4,7 @@ This is an example when you develop a website with NextJS and want to create a c
 - [How to create cors proxy in your website](#how-to-create-cors-proxy-in-your-website)
 - [How to use cors proxy in your website](#how-to-use-cors-proxy-in-your-website)
 - [How to run this demo on your local](#how-to-run-this-demo-on-your-local)
+- [How to support this project](#how-to-support-this-project)
 
 ## How to create cors proxy in your website
 - create an api folder in pages folder.
@@ -47,4 +48,8 @@ const res = await fetch("/api/cors?url=https://example.com/");
 ## How to run this demo on your local
 - You can download or fork this repo, then `yarn` or `npm install` for installing package from `package.json` config file.
 - Now, you can start the local server with `yarn dev` or `npm run dev`. After that, please open the browser and go to `localhost:3000`, then you can try the demo with yourself.
+
+## How to support this project
+- If you like this project, you can donate by this link.
+  - https://www.paypal.me/chitly/5
 - Hope you happy with this project.
